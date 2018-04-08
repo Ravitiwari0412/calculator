@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.codingblocks.calculator.MainActivity"
+    tools:layout_editor_absoluteY="81dp"
+    android:background="#FF0000"
+    tools:layout_editor_absoluteX="0dp">
+
+
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#0000FF"
+        android:ems="10"
+        android:textSize="25dp"
+        android:inputType="textPersonName"
+        android:hint="Enter First Digit"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        android:layout_marginTop="37dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#0000FF"
+        android:ems="10"
+        android:textSize="25dp"
+        android:inputType="textPersonName"
+        android:hint="Enter Second digit"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        android:layout_marginTop="35dp"
+        app:layout_constraintTop_toBottomOf="@+id/editText"
+        tools:layout_constraintLeft_creator="1" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Answer Here"
+        android:background="#0000FF"
+        android:textSize="25dp"
+        android:layout_marginStart="53dp"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginTop="29dp"
+        app:layout_constraintTop_toBottomOf="@+id/editText2"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/editText2"
+        android:layout_marginLeft="53dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add"
+        android:background="#00FF00"
+
+
+        android:layout_marginEnd="21dp"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/button3"
+        app:layout_constraintRight_toRightOf="@+id/textView"
+        android:layout_marginBottom="12dp"
+        android:layout_marginRight="21dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Multiply"
+        android:background="#00FF00"
+
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/button4"
+        app:layout_constraintRight_toRightOf="@+id/button3"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="19dp"
+        app:layout_constraintLeft_toLeftOf="@+id/button3" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Subtract"
+        android:background="#00FF00"
+
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintRight_toRightOf="@+id/button"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintLeft_toLeftOf="@+id/button" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Divide"
+        android:background="#00FF00"
+
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="@+id/button2"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="27dp"
+        app:layout_constraintLeft_toLeftOf="@+id/button2" />
+
+</android.support.constraint.ConstraintLayout>
